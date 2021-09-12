@@ -2,6 +2,8 @@
 
 :root {
     --primary-color: #045B87;
+    --secondary-color:#cfaf9756;
+    --extra-color:#468a96;
     --off-white: #F3F4F6;
     --dark-gray: #6B7280;
 }
@@ -9,53 +11,65 @@
 
 body 
 {
+    min-width: 224px;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    background-color: var(--secondary-color);
+}
+
+.container
+{
     display: flex;
     flex-direction: column;
-    font-family: 'Montserrat', sans-serif;
-    margin: 0px;
+    height: fit-content;
+    width: 100%;
+    align-items: stretch;
+    flex-shrink: 0;
+    flex-grow: 1;
 }
 
-.nav
+.flex-item
 {
+    color:white;
+    font-size: 1rem;
+    text-align: center;
+    flex-direction: column-reverse;
+}
+
+.item1
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    position: relative;
     width: 100%;
-    min-width: fit-content;
     background-color: var(--primary-color);
     min-height: fit-content;
-    padding: 2rem 2rem;
-    display: flex;
-    flex-wrap: wrap;
+    min-width: fit-content;
     justify-content: space-around;
-    box-sizing: border-box;
 }
 
-.nav .nav-div-h1
+.item1 .nav-div-h1
 {
     display: flex;
-    min-width: fit-content;
     flex-wrap: wrap;
     color: white;
 }
 
-.nav h1
-{
-    min-width: fit-content;
-    display: inline;
-    color: white;
-}
 
-.nav .nav-div-ul
+.item1 .nav-div-ul
 {
     display:flex;
     flex-wrap: wrap;
-    min-width: fit-content;
-    padding-top: 1.5rem;
+    padding-top: 2rem;
     padding-bottom: 1rem;
     padding-inline-start: 0px;
     margin-block-start: 0em;
     margin-block-end: 0em;
 }
 
-.nav .list-items
+.item1 .list-items
 {
     display: flex;
     min-width: fit-content;
@@ -64,13 +78,13 @@ body
     list-style-type: none;
 }
 
-.nav .nav-links
+.item1 .nav-links
 {
     color: white;
     text-decoration: none;
 }
 
-.nav .nav-links::after {
+.item1 .nav-links::after {
     content: '';
     display: block;
     width: 0px;
@@ -79,38 +93,20 @@ body
     transition: width .3s;
 }
 
-.nav .nav-links:hover::after 
+.item1 .nav-links:hover::after 
 {
     width: 100%;
 }
 
-.hero-div
-{
-    
-    background-color: #e2e2e2;
-}
-.hero
+.item2
 {
     display: flex;
-    margin: 5rem 5rem;
-    border: solid var(--primary-color);
-    border-width: 1px 1px;
-    border-radius: 3rem 3rem;
+    min-width: 130.4px;
+    background-color: yellowgreen;
 }
-
-.hero .hero-img
+.item3
 {
-    height: 20rem;
-    margin: 2rem 2rem;
-    padding: 3rem 3rem;
-}
-
-.hero .hero-heading
-{
-    margin: 10rem 3rem 0rem 6rem;
-}
-
-.hero .hero-heading #profile
-{
-    color: var(--primary-color);
+    display: flex;
+    min-width: 130.4px;
+    background-color: violet;
 }
