@@ -147,7 +147,7 @@ body
 {
     .item2
     {
-        margin-bottom: 37.8px;
+        margin-bottom: 2rem;
         flex-direction: column ;
     }
     .hero-img
@@ -159,6 +159,7 @@ body
     {
         width: 100%;
         margin: 0;
+        padding-bottom: 2rem;
         max-width: 100%;
         min-width: 180px;
         min-height: 150px;
@@ -177,4 +178,123 @@ body
     margin: auto;
     padding: 2rem 2rem;
     border-radius: 8px;
+}
+
+.item4
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6EE;
+    color: black;
+    align-items: center;
+    margin: 2rem auto 0 auto;
+    padding: 2rem 2rem;
+    border-radius: 8px;
+}
+
+.item4-link
+{
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.item4 .item4-link::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: var(--dark-blue);
+    transition: width .3s;
+}
+
+.item4 .item4-link:hover::after 
+{
+    width: 100%;
+}
+
+.item5
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6EE;
+    color: black;
+    align-items: center;
+    margin: 2rem auto;
+    padding: 2rem 2rem;
+    border-radius: 8px;
+}
+
+.item5-link
+{
+    text-decoration: none;
+    color: var(--dark-blue);
+}
+
+.item5 .item5-link::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: var(--dark-blue);
+    transition: width .3s;
+}
+
+.item5 .item5-link:hover::after 
+{
+    width: 100%;
+}
+
+.item6
+{
+    display: flex;
+    flex-direction: column;
+    background-color: #F6F6EE;
+    color: black;
+    align-items: center;
+    padding: 3rem 0;
+    border-radius: 8px;
+    width: 100%;
+    margin: 0;
+    max-width: 100%;
+}
+
+.item6-div
+{
+    display: flex;
+    flex-direction: row;
+    flex-shrink: 2;
+}
+
+#github-link
+{
+    padding: 2rem 3rem 0 3rem;
+}
+
+.item6-link
+{
+    text-decoration: none;
+    color: var(--dark-blue);
+    padding: 2rem 0 0 0;
+}
+
+.item6 .item6-link::after {
+    content: '';
+    display: block;
+    width: 0px;
+    height: 2px;
+    background: var(--dark-blue);
+    transition: width .3s;
+}
+
+.item6 .item6-link:hover::after 
+{
+    width: 100%;
+}
+
+h2
+{
+    
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0;
 }
