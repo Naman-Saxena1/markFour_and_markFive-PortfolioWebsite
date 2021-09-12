@@ -2,7 +2,7 @@
 
 :root {
     --primary-color: #045B87;
-    --secondary-color:#cfaf9756;
+    --cream-color:#F6F6EE;
     --extra-color:#468a96;
     --off-white: #F3F4F6;
     --dark-gray: #6B7280;
@@ -15,7 +15,7 @@ body
     display: flex;
     font-family: 'Montserrat', sans-serif;
     margin: 0;
-    background-color: var(--secondary-color);
+    background-color: #2b6777;
 }
 
 .container
@@ -100,10 +100,69 @@ body
 
 .item2
 {
+    width: 100%;
     display: flex;
-    min-width: 130.4px;
-    background-color: yellowgreen;
+    margin: 0 0;
+    flex-direction: row-reverse;  
+    background-color: #2b6777;
+    align-items: center;
+    justify-content: center;
 }
+
+.hero-img
+{
+    object-fit: contain;
+    width: 100%;
+    margin-right: -30px;
+    border-radius: 8px;
+}
+
+.hero-heading
+{
+    display: flex;
+    flex-direction: column;
+    font-weight: bolder;
+    margin-top: 4rem;
+    margin-right: -454px;
+    max-width: 20%;
+    background-color: #F6F6EE;
+    justify-content: center;
+    width: 50%;
+    height: fit-content;
+    min-width: 425px;
+    min-height: 245px;
+    color: black;
+    align-items: center;
+    border-radius: 8px;
+}
+
+#profile
+{
+    color: var(--primary-color);
+}
+
+@media only screen and (max-width:1547px)
+{
+    .item2
+    {
+        margin-bottom: 37.8px;
+        flex-direction: column ;
+    }
+    .hero-img
+    {
+        width: 100%;
+        margin: 0;
+    }
+    .hero-heading
+    {
+        width: 100%;
+        margin: 0;
+        max-width: 100%;
+        min-width: 180px;
+        min-height: 150px;
+    }
+}
+
 .item3
 {
     display: flex;
