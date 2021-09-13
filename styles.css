@@ -44,7 +44,8 @@ body
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    position: relative;
+    position: sticky;
+    top: 0px;
     width: 100%;
     background-color: #123C69;
     min-height: fit-content;
@@ -180,6 +181,65 @@ body
     border-radius: 8px;
 }
 
+.skills-ul
+{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-around;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+
+.skills-list-item
+{
+    display: flex;
+    flex-direction: column;
+    padding: 0 1rem;
+}
+
+
+@media only screen and (max-width:560px)
+{
+    .skills-ul
+    {
+        flex-direction: row;
+    }
+    .skills-icons
+    {
+        width: 35px;
+        height: 35px;
+    }
+
+    .skills-list-item
+    {
+        margin: 3rem 0;
+        padding-left: 0;
+    }
+}
+
+
+@media only screen and (max-width:418px)
+{
+    .skills-ul
+    {
+        margin-left: 1rem;
+        flex-direction: column;
+    }
+    .skills-icons
+    {
+        width: 18px;
+        height: 20px;
+        margin-left: 1.3rem;
+    }
+
+    .skills-list-item
+    {
+        margin: 0;
+        padding-left: 0;
+    }
+}
+
 .item4
 {
     display: flex;
@@ -289,6 +349,15 @@ body
 .item6 .item6-link:hover::after 
 {
     width: 100%;
+}
+
+
+@media only screen and (max-width:300px)
+{
+    .item6-div
+    {
+        flex-direction: column;
+    }
 }
 
 h2
