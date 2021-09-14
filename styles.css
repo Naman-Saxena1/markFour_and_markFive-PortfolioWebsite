@@ -177,7 +177,7 @@ body
     color: black;
     width: fit-content;
     align-items: center;
-    margin: auto;
+    margin: 32px auto;
     padding: 2rem 2rem;
     border-radius: 8px;
 }
@@ -248,7 +248,7 @@ body
     background-color: #F6F6EE;
     color: black;
     align-items: center;
-    margin: 2rem auto 0 auto;
+    margin: 32px auto 32px auto;
     padding: 2rem 2rem;
     border-radius: 8px;
 }
@@ -371,7 +371,7 @@ h2
 {
     width: 100%;
     display: flex;
-    margin: 0 0;
+    margin: 0 0 32px 0;
     flex-direction: row-reverse;  
     background-color: var(--cream-color);
     align-items: center;
