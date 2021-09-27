@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
 
 :root {
     --primary-color: #045B87;
@@ -104,6 +105,8 @@ body
 
 .item2
 {
+    font-family: "Kalam", cursive;
+    font-size: large;
     width: 100%;
     display: flex;
     margin: 0 0;
@@ -200,7 +203,7 @@ body
 }
 
 
-@media only screen and (max-width:560px)
+@media only screen and (max-width:650px)
 {
     .skills-ul
     {
@@ -220,12 +223,22 @@ body
 }
 
 
-@media only screen and (max-width:418px)
+@media only screen and (max-width:500px)
 {
+    .item3
+    {
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    .skills
+    {
+        display: flex;
+    }
     .skills-ul
     {
         margin-left: 1rem;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
     .skills-icons
     {
