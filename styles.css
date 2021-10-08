@@ -14,7 +14,7 @@
 
 body 
 {
-    min-width: 224px;
+    min-width: 350px;
     max-height: min-content;
     display: flex;
     font-family: 'Montserrat', sans-serif;
@@ -258,6 +258,7 @@ body
 {
     display: flex;
     flex-direction: column;
+    width: 55%;
     background-color: #F6F6EE;
     color: black;
     align-items: center;
@@ -290,6 +291,7 @@ body
 {
     display: flex;
     flex-direction: column;
+    width: 55%;
     background-color: #F6F6EE;
     color: black;
     align-items: center;
@@ -406,7 +408,7 @@ h2
     color: black;
     margin: 2rem auto;
     padding: 0 2rem 1rem 2rem;
-    width: fit-content;
+    width: 68%;
     border-radius: 8px;
     min-height: 150px;
 
